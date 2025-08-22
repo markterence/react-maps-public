@@ -1,0 +1,25 @@
+.property-dot {
+    width: 12px;
+    height: 12px;
+    line-height: 8px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 7px;
+    text-align: center;
+    pointer-events: none;
+    border-style: solid;
+}
+
+.property-chip::after {
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: calc(50% - 4px);
+    top: 99%;
+    border: 4px solid transparent;
+    content: "";
+    border-top-color: #A3000B;
+}
