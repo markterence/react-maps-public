@@ -48,7 +48,7 @@ jobs:
           VITE_APP_API_URL: ${{ secrets.VITE_APP_API_URL }}
           GENERATE_SOURCEMAP: 'false'
           VITE_APP_VERSION: v3.2.0
-          
+          VITE_APP_BASE_NAME: ${{ env.VITE_APP_BASE_NAME }}
         run: |
           yarn build
 
