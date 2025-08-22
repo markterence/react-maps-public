@@ -53,8 +53,7 @@ jobs:
           yarn build
 
       - name: Upload Pages artifact
-        # Latest (as of 2025) major version
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
           retention-days: 7
